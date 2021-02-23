@@ -11,7 +11,7 @@ class QuestionAdmin(admin.ModelAdmin):
     # fields = ['pub_date', 'question_text']
     fieldsets = [
         (None, {'fields': ['question_text']}),
-        ('Date information', {'fields': ['pub_date'], 'classes': ['collapse']}),
+        ('Информация о дате', {'fields': ['pub_date'], 'classes': ['collapse']}),
     ]
     inlines = [ChoiceInLine]
     list_display = ('question_text', 'pub_date', 'was_published_recently')
